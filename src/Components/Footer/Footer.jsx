@@ -1,12 +1,13 @@
-import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <p>Desenvolvido por Vinicius Schürhaus do Nascimento © {new Date().getFullYear()}</p>
-        </footer>
-    );
+  return (
+    <footer className="footer-slide">
+      <div className="footer-content">
+        <p>© 2025 Vinicius Schurhaus do Nascimento. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

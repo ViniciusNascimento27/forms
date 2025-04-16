@@ -1,11 +1,29 @@
-.footer {
-    background-color: #5b9bd5;
-    color: white;
+.footer-slide {
+    background: linear-gradient(90deg, #5b9bd5, #e7e6e6);
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    font-size: 16px;
-    margin-top: 40px;
+    padding: 1rem 0;
     position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    animation: slideUp 0.6s ease-out;
+    margin-top: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  

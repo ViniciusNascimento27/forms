@@ -1,20 +1,13 @@
-import './Card.css'
+import './Card.css';
 
-
-export const Card = (props) => {
-    return (
-        <div className='card'>
-                <div className='card-header'>
-                    <img  src={props.imagem} alt={props.nome}/>
-                </div>
-
-                <div className='card-footer'>
-                    <h4>{props.nome}</h4>
-                    <h5>{props.cargo}</h5>
-
-                </div>
-
-        </div>
-    )
-    
-}
+export const Card = ({ nome, imagem, cargo, corDeFundo }) => {
+  return (
+    <div className="card" style={{ borderTop: `5px solid ${corDeFundo}` }}>
+      <img src={imagem} alt={nome} />
+      <div className="card-content">
+        <h4>{nome}</h4>
+        <p>{cargo}</p>
+      </div>
+    </div>
+  );
+};

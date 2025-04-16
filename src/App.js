@@ -3,6 +3,7 @@ import Banner from './Components/Banner/Banner';
 import Forms from './Components/Forms/Forms';
 import { useState } from 'react';
 import { Time } from './Components/Time/Time';
+import Footer from './Components/Footer/Footer';
 
 
 const App = () => {
@@ -56,7 +57,7 @@ const App = () => {
       key={time.nome}
       />   
       )}      
-
+ <Footer />
     </div>
   );
 }
